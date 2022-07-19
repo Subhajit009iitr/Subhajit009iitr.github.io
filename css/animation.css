@@ -1,0 +1,86 @@
+
+    .Text:hover{
+        transition: ease-in-out 1s;
+        font-size: 5em;
+        margin-top: 5vw;
+    }
+    #me:hover{
+        visibility: visible;
+    }
+    .contacts img:hover{
+        opacity: 1;
+    }
+    .artcon img:hover{
+        height: 50vh;
+        transition: ease-in-out 2s;
+        margin: 0px;
+        padding: 0px;
+    }
+    #ag:hover{
+        transform: translateY(4);
+        z-index: 5;
+    }
+    .movcon img:hover{
+        height: 50vh;
+        margin:0px;
+        padding: 0px;
+        transition: ease-in-out 2s;
+    }
+    #box1:hover{
+        margin-top: 10vh;
+        margin-left: 20vw;
+        box-shadow: 2px;
+        transition: ease-in-out 2s; 
+    }
+    #box2:hover{
+        margin-top: -10vh;
+        margin-left: 15vw;
+        box-shadow: 2px;
+        transition: ease-in-out 2s; 
+    }
+    @keyframes anim{
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.3;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes col{
+        0%{
+            background-color: rgb(255, 80, 118);
+        }
+        10%{
+            background-color: rgb(255, 127, 236);
+        }
+        20%{
+            background-color: rgb(153, 127, 255);
+        }
+        30%{
+            background-color: rgb(127, 219, 255);
+        }
+        40%{
+            background-color: rgb(127, 255, 197);
+        }
+        50%{
+            background-color: rgb(142, 255, 127);
+        }
+        60%{
+            background-color: rgb(206, 255, 127);
+        }
+        70%{
+            background-color: rgb(248, 189, 95);
+        }
+        80%{
+            background-color: rgb(254, 110, 91);
+        }
+        90%{
+            background-color: rgb(255, 140, 127);
+        }
+        100%{
+            background-color: rgb(255, 127, 159);
+        }
+    }
