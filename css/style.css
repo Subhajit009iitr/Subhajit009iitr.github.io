@@ -10,15 +10,17 @@ body{
     background-attachment: fixed;
     background-size: 100% ;
 }
-#me>img{
-    visibility: hidden;
-    height: 15vh;
+.me>img{
+    height: 0vh;
+    transition: ease-in-out 2s;
+    border-radius: 50%;
+   
 }
 .Text{
     padding-bottom: 40vh;
     font-size: 4em;
     color: rgb(47, 45, 179);
-    transition: ease-out 1s;
+    transition: ease-out .5s;
 }
 .dev{
     font-size: 8mm;
@@ -36,6 +38,7 @@ body{
     text-align: center;
     position: sticky;
     top: 0px;
+    z-index: 2;
 }
 hr{
     visibility: hidden;
@@ -65,7 +68,7 @@ nav a{
     border: 3px solid rgb(132, 0, 255); 
     border-radius: 12px;
     font-size: 6mm;
-    transition: ease-out 2s;
+    transition: ease-out .5s;
 }
 #box2{
     background-color: rgba(0, 255, 208, 0.452);
@@ -75,7 +78,7 @@ nav a{
     border: 3px solid rgb(255, 115, 0);
     border-radius: 12px;
     font-size: 6mm;
-    transition: ease-out 2s;
+    transition: ease-out .5s;
 }
 .hobby{
     background-image: url("https://thumbs.dreamstime.com/b/vector-hobby-pattern-hobby-seamless-background-vector-illustration-vector-hobby-pattern-hobby-seamless-background-113988843.jpg");
@@ -97,6 +100,22 @@ nav a{
 .artcon{
     animation: col 3s infinite;
 }
+.artcon>div{
+    height: 40vh;
+    position: relative;
+    float: left;
+}
+#ag,#as,#cc{
+    width: 20vw;
+}
+#ap,#va,#wp{
+    width: 10vw;
+}
+.artcon>div>img{
+    display: block;
+    transition: .1s transform;
+    transform: translateZ(0);
+}
 .artcon p{
     font-size: 8mm;
 }
@@ -107,6 +126,15 @@ nav a{
 }
 .movcon{
     animation: col 3s infinite; 
+}
+.movcon>div{
+    position: relative;
+    float: left;
+}
+.movcon>div>img{
+    display: block;
+    transition: .1s transform;
+    transform: translateZ(0);
 }
 .movcon p{
     font-size: 8mm;
@@ -134,9 +162,35 @@ nav a{
 .project ul p{
     font-size: 5mm;
 }
+.gamecon>div{
+    position: relative;
+    float: left;
+}
+.gamecon>div>img{
+    display: block;
+    transition: .1s transform;
+    transform: translateZ(0);
+}
 .games{
     margin: 2.8px;
     height:22vh;
+}
+.robocon>div{
+    position: relative;
+    float: left;
+    margin: 2px;
+}
+.robocon>div>img{
+    display: block;
+    transition: .1s transform;
+    transform: translateZ(0);
+}
+.pp{
+    display: inline-flex;
+    font-size: 6mm;
+}
+.project>ul>p{
+    font-size: 10mm;
 }
 .arm{
     height: 40vh;

@@ -4,27 +4,40 @@
         font-size: 5em;
         margin-top: 5vw;
     }
-    #me:hover{
-        visibility: visible;
+    .Text:hover > .me>img{
+        height: 10vh;
+        border: 2px solid rgb(0, 251, 255);
     }
     .contacts img:hover{
         opacity: 1;
     }
-    .artcon img:hover{
-        height: 50vh;
-        transition: ease-in-out 2s;
-        margin: 0px;
-        padding: 0px;
+    .artcon div:hover{
+        z-index: 1;
     }
-    #ag:hover{
-        transform: translateY(4);
-        z-index: 5;
+    .artcon>div:hover>img{
+        transform: scale(1.5,1.5);
+        transition: .3s transform;
     }
-    .movcon img:hover{
-        height: 50vh;
-        margin:0px;
-        padding: 0px;
-        transition: ease-in-out 2s;
+    .movcon div:hover{
+        z-index: 1;
+    }
+    .movcon>div:hover>img{
+        transform: scale(1.5,1.5);
+        transition: .3s transform;
+    }
+    .gamecon div:hover{
+        z-index: 1;
+    }
+    .gamecon>div:hover>img{
+        transform: scale(1.5,1.5);
+        transition: .3s transform;
+    }
+    .robocon div:hover{
+        z-index: 1;
+    }
+    .robocon>div:hover>img{
+        transform: scale(1.5,1.5);
+        transition: .3s transform;
     }
     #box1:hover{
         margin-top: 10vh;
